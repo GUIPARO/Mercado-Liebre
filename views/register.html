@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrate</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="container">
+                <div class="container-logo">
+                    <a href="/">
+                        <img class="logo" src="/img/logo-mercado-liebre.svg" alt="Logo Mercado Libre">
+                    </a>
+                </div>
+                <div class="search-container">
+                    <input type="text" name="search" id="search" placeholder="Buscar productos, marcas">
+                    <i class='fas fa-search'></i>
+                </div>
+            </div>
+            <div class="compra">
+                <i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito
+            </div>
+        </div>
+        <nav>
+            <section class="list-header">
+                <ul class="items-list">
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="#">Tiendas Oficiales</a></li>
+                    <li><a href="#">Vender</a></li>
+                    <li><a href="#">Ayuda</a></li>
+                </ul>
+            </section>
+            <section class="list-header-user">
+                <ul class="item-user">
+                    <li><a href="/register">Creá tu cuenta<i class="far fa-address-card"></i></a></li>
+                    <li><a href="/login"></i>Ingresá<i class="fas fa-sign-in-alt"></i></a></li>
+                    <li><a href="#"></i>Mis compras<i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+            </section>
+        </nav>
+        <div class="burger-menu">
+            <button class="button-menu">
+                <i class="fas fa-bars"></i>
+            </button>
+    </header>
+    <main>
+        <form action="resultado.html" method="POST">
+            <div class="container-register">
+                <div class="form-gropu">
+                    <label for="nombre"></label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre y Apellido">
+                </div>
+                <div class="form-gropu">
+                    <label for="nombre-user"></label>
+                    <input type="text" id="nombre-user" name="nombre-user" placeholder="Nombre de usuario">
+                </div>
+                <div class="form-gropu">
+                    <label for="email"></label>
+                    <input type="email" id="email" name="email-user" placeholder="Email">
+                </div>
+                <div class="form-gropu">
+                    <label for="birth">
+                        <h4>Fecha de nacimiento</h4>
+                    </label>
+                    <input type="date" id="birth" name="birth">
+                </div>
+
+                <div class="profile-user">
+                    <label class="title">
+                        <h4>Perfil de usuario</h4>
+                    </label>
+                    <div class="options">
+                        <div class="options-seller">
+                            <input type="radio" name="Subscripcion" id="Subscripcion-seller">
+                            <label for="Subscripcion-seller"> Vendedor</label>
+                        </div>
+                        <div class="options-buyer">
+                            <input type="radio" name="Subscripcion" id="Subscripcion-buyer">
+                            <label for="Subscripcion-buyer"> Comprador</label>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-interests">
+                    <label class="title">
+                        <h4>Intereses</h4>
+                    </label>
+                    <div class="interests">
+                        <div>
+                            <input type="checkbox" name="interest" value="interest-electro" id="interest-electro">
+                            <label for="interest-electro"> Electro</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="interest" value="interest-moda" id="interest-moda">
+                            <label for="interest-moda"> Moda</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="interest" value="interest-hogar" id="interest-hogar">
+                            <label for="interest-hogar"> Hogar</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="interest" value="interest-juguetería" id="interest-jugueteria">
+                            <label for="interest-jugueteria"> Juguetería</label>
+                        </div>
+                        <input type="checkbox" name="interest" value="interest-vidasana" id="interest-vidasana">
+                        <label for="interest-vidasana"> Vida Sana</label>
+
+                    </div>
+                </div>
+
+
+                <div class="user-picture">
+                    <label for="picture"><h4>Elige tu foto de usuario</h4></label>
+                    <input type="file" name="Avatar" accept=".jpg" id="picture">
+                </div>
+
+                <div class="user-password">
+                    <input type="password" id="nombre-user" name="nombre-user" placeholder="Escribe tu contraseña">
+                </div>
+
+                <div class="confirm-password">
+                    <input type="password" name="user-password-confirm" id="password"
+                        placeholder="Confirma tu contraseña">
+                </div>
+
+                <div class="bottoms">
+                <div class="send-bottom">
+                    <button type="submit" value="Enviar">Enviar</button>
+                </div>
+                <div class="eraser-bottom">
+                    <button type="reset" value="Borrar">Borrar</button>
+                </div>
+            </div>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div class="container-footer">
+            <section class="container-card">
+                <div class="card">
+                    <i class="fas fa-credit-card"></i>
+                </div>
+                <h4>Pagá con tarjeta o en efectivo</h4>
+                <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+                    puntos de pago. ¡Y siempre es seguro!</p>
+            </section>
+            <section class="container-gift">
+                <div class="gift">
+                    <i class="fas fa-gift"></i>
+                </div>
+                <h4>Envío gratis desde $ 2.500</h4>
+                <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                    productos. Es un beneficio de Mercado Puntos.</p>
+            </section>
+            <section class="container-security">
+                <div class="security">
+                    <i class="fas fa-user-shield"></i>
+                </div>
+                <h4>Seguridad, de principio a fin</h4>
+                <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                    porque estás siempre protegid@.</p>
+            </section>
+            <section class="container-piedepagina">
+                <p class="piedepagina">● ● Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+            </section>
+        </div>
+    </footer>
+</body>
+
+</html>
