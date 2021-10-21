@@ -179,7 +179,7 @@ main section article .main-article .precio-descuento{
     width:30% ;
     padding: 5px;
     align-self: center;
-    margin: 0 10px;
+    margin-right: 10px;
 }
 
 .descuento{
@@ -188,7 +188,7 @@ main section article .main-article .precio-descuento{
     padding: 5px;
     align-self: center;
     width: 70%;
-    margin: 0 15px;
+    margin-left: 20px;
 }
 
 .descripcion{
@@ -496,6 +496,8 @@ main .list-products {
 
 main .last_visit .list-products .main-article:hover h4{
     display:flex;
+    font-size: 16px;
+    font-weight: lighter;
 }
 
 main section article:hover {
