@@ -54,19 +54,19 @@
             </button>
     </header>
     <main>
-        <form action="resultado.html" method="POST">
+        <form action="/" method="post">
             <div class="container-register">
                 <div class="form-gropu">
                     <label for="nombre"></label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Nombre y Apellido">
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre y Apellido" required minlength="6">
                 </div>
                 <div class="form-gropu">
                     <label for="nombre-user"></label>
-                    <input type="text" id="nombre-user" name="nombre-user" placeholder="Nombre de usuario">
+                    <input type="text" id="nombre-user" name="nombre-user" placeholder="Nombre de usuario" required minlength="6">
                 </div>
                 <div class="form-gropu">
                     <label for="email"></label>
-                    <input type="email" id="email" name="email-user" placeholder="Email">
+                    <input type="email" id="email" name="email-user" placeholder="Email" required>
                 </div>
                 <div class="form-gropu">
                     <label for="birth">
@@ -122,21 +122,23 @@
 
                 <div class="user-picture">
                     <label for="picture"><h4>Elige tu foto de usuario</h4></label>
+                    <div class="container-picture">
                     <input type="file" name="Avatar" accept=".jpg" id="picture">
+                    </div>
                 </div>
 
                 <div class="user-password">
-                    <input type="password" id="nombre-user" name="nombre-user" placeholder="Escribe tu contraseña">
+                    <input type="password" id="nombre-user" name="nombre-user" placeholder="Escribe tu contraseña" required>
                 </div>
 
                 <div class="confirm-password">
                     <input type="password" name="user-password-confirm" id="password"
-                        placeholder="Confirma tu contraseña">
+                        placeholder="Confirma tu contraseña" required>
                 </div>
 
                 <div class="bottoms">
                 <div class="send-bottom">
-                    <button type="submit" value="Enviar">Enviar</button>
+                        <button type="submit" value="Enviar">Enviar</button>
                 </div>
                 <div class="eraser-bottom">
                     <button type="reset" value="Borrar">Borrar</button>
@@ -147,6 +149,7 @@
     </main>
     <footer>
         <div class="container-footer">
+            <div class="elementos-footer">
             <section class="container-card">
                 <div class="card">
                     <i class="fas fa-credit-card"></i>
@@ -171,6 +174,7 @@
                 <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
                     porque estás siempre protegid@.</p>
             </section>
+        </div>
             <section class="container-piedepagina">
                 <p class="piedepagina">● ● Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
             </section>

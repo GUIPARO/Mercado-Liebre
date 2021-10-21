@@ -17,17 +17,7 @@ img{
     width: 100%; 
 }   
 
-/* tamaños tipograficos*/
-
-/* 
-cuerpo de texto: 12px
-titulares: 24px
-precios: 18px
-Descuentos: 16px
-Descripciones: 16px
-*/
-
- /* Home*/
+ /* Inicio Home*/
 
 /* header*/
 
@@ -112,21 +102,20 @@ header nav .list-header-user{
     display: none;
 }
 
-  /*Main*/
+/*Main*/
 
  main{
     width: 90%;
     margin: auto;
  }
 
-  
+/*Titulos(Basado en tu última visita/Oferta)*/
  main h2{
     color: #666;
-    font-size: 24px;                    /*Titulos(Basado en tu última visita/Oferta)*/
+    font-size: 24px;                    
     padding: 10px 0 10px 0;
     text-align: center;
 }
-
 
  main section article {
     margin-bottom: 10px;             
@@ -135,27 +124,33 @@ header nav .list-header-user{
     width: 100%;
 }
 
-
+/*Sección precio-descuento de cada producto*/
 main section article .main-article {
     border-top: 1px solid #ebebeb;  
-    padding-top: 5px;                       /*Sección precio-descuento de cada producto*/
+    padding-top: 5px;                       
     position: relative;
     background-color: white;        
 }
 
+ /*Icono carrito*/
 main section article .main-article i {
     display: block;
     font-size: 16px;
     padding: 5px;
     width: 30px;
     height: 30px;
-    border: 1px solid #39b54a;                  /*Icono de carrito*/
+    border: 1px solid #39b54a;                 
     background-color: #FFF;
     border-radius: 50%;
     position: absolute;
     right: 20px;
     top: -15px;
-    color: #39b54a
+    color: #39b54a;
+}
+
+main section article .main-article i:hover{
+    transform: rotateZ(-90deg);
+    transition: 1s;
 }
 
 main section article .main-article .precio-descuento{
@@ -167,6 +162,7 @@ main section article .main-article .precio-descuento{
     width:30% ;
     padding: 5px;
     align-self: center;
+    margin: 0 10px;
 }
 
 .descuento{
@@ -175,6 +171,7 @@ main section article .main-article .precio-descuento{
     padding: 5px;
     align-self: center;
     width: 70%;
+    margin: 0 15px;
 }
 
 .descripcion{
@@ -191,32 +188,42 @@ main section article .main-article .precio-descuento{
 
  /* End Home*/
 
- /* Register */
+ /* Inicio Register */
 
  main form{
     width: 90%;
     margin: 0 auto;
  }
 
+ .container-register{
+    background: white;
+    padding: 10px;
+    box-shadow: 0 0 0 1px rgb(0 0 0 / 25%);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
  main form .form-gropu,.profile-user,
  .user-picture, .user-password,
  .confirm-password, 
  .send-bottom,
  .eraser-bottom {
-    margin: 30px 0;
+    margin: 10px 0;
  }
 
  main form .form-gropu input {
-    padding: 15px;
+    padding: 12px;
     width: 100%;
     margin-top: 10px;
     border-radius: 5px;
     border:none;
+    box-shadow: 0 0 0 1px rgb(0 0 0 / 25%)
 }
 
 main form .profile-user .options{
     display: flex;
     margin: 20px;
+    overflow: hidden;
 }
 
 main .interests {
@@ -231,14 +238,20 @@ main form .profile-user .options input,
 .user-password input,.confirm-password input{
     border:none;
     border-radius: 5px;
-    padding:15px;
+    padding:12px;
     margin-top: 10px;
     background:white;
     width: 100%;
+    box-shadow: 0 0 0 1px rgb(0 0 0 / 25%);
+}
+
+.container-picture{
+    display:flex;
+    overflow: hidden;
 }
 
 .user-picture input{
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .bottoms{
@@ -248,8 +261,8 @@ main form .profile-user .options input,
 .bottoms .send-bottom, .send-bottom button{
     border:none;
     border-radius: 5px;
-    padding:5px;
-    margin-top: 10px;
+    padding: 3px;
+    margin-top: 4px;
     background:#03264C;
     color: white;
     width: 100%;
@@ -258,8 +271,8 @@ main form .profile-user .options input,
 .bottoms .eraser-bottom,.eraser-bottom button {
     border:none;
     border-radius: 5px;
-    padding:5px;
-    margin-top: 10px;
+    padding: 3px;
+    margin-top: 4px;
     background: red;
     color: white;
     width: 100%;
@@ -268,9 +281,25 @@ main form .profile-user .options input,
 
 /* login */
 
+main .container-login {
+    background: white;
+    padding: 10px;
+    box-shadow: 0 0 0 1px rgb(0 0 0 / 25%);
+    border-radius: 5px;
+    overflow: hidden;
+    margin:10px auto;
+}
+
+main .container-login h2 {
+    text-align: center;
+    color:black;
+    font-weight: 600;
+}
+
+
 main .container-login .login-name,
 .login-password{
-margin: 30px 0;
+margin: 20px 0;
 }
 
 main .container-login .login-name input,
@@ -280,17 +309,22 @@ main .container-login .login-name input,
     margin-top: 10px;
     border-radius: 5px;
     border:none;
+    box-shadow: 0 0 0 1px rgb(0 0 0 / 25%)
 }
 
 .main .container-login .botton-login,
 .botton-login button {
     border:none;
     border-radius: 5px;
-    padding:5px;
+    padding:10px;
     margin-top: 10px;
     background:#03264C;
     color: white;
     width: 100%;
+}
+
+main form .container-login .botton-login{
+    margin-bottom: 15px;
 }
 /*Final login*/
 
@@ -319,6 +353,7 @@ footer .container-footer{
     color:blue;
     font-size: 2em;
     margin: 20px 0 10px ;
+    display: inline-block;
 }
 
 .piedepagina{
@@ -338,9 +373,8 @@ header .header-content{
 
 
 header .header-content .container {
-        width: 70%
+    width: 70%
 }
-
 
 header .burger-menu{
     display:none
@@ -392,14 +426,10 @@ main section{
 }
 
 /*Sombra contenedor articulos para laptop y tablet*/
+
 main section article {
-    box-shadow: 0px 0px 10px rgb(100,100,100) ;
     width: 45%;
     margin: 10px;
-}
-
-.descripcion{
-    display: flex;
 }
 
 main .list-products {
@@ -421,25 +451,56 @@ main h2 {
 
 .container-register{
     max-width: 770px;
-    margin: auto;
+    margin: 10px auto;
+    background: white;
+    padding: 10px;
+    box-shadow: 0 0 0 1px rgb(0 0 0 / 25%);
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 /* Login*/
 
-.container-login{
+main form .container-login{
     max-width: 770px;
-    margin: auto;
 }
+
+
 
 @media( min-width: 769px){
 
-    main .list-products {
-        display:flex;
-        flex-wrap: nowrap;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
+main .list-products {
+    display:flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+main .last_visit .list-products .main-article:hover h4{
+    display:flex;
+}
+
+main .oferts .list-products .main-article:hover h4{
+    display:flex;
+}
+main section article:hover {
+    box-shadow: 0px 0px 10px rgb(100,100,100) ;
+}
+
+.botton-login button:hover {
+   background-color: #0022AA;
+}
+
+footer .container-footer .elementos-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card:hover, .gift:hover, .security:hover{
+    color: #EAC926; 
+}
+
 }
 
 /* Final Media Query */
