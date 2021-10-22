@@ -375,10 +375,11 @@ footer .container-footer .elementos-footer section p{
  /*Iconos de tamaño 2em 
  Margen inferior de separación de 10px*/
  
- .card,.gift,.security{
+
+.card i ,.gift i,.security i{
     color:#1259c3;
     font-size: 2em;
-    margin: 20px 0 10px ;
+    margin: 20px 0 10px;
     display: inline-block;
 }
 
