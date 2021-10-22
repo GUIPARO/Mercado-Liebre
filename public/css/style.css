@@ -548,7 +548,7 @@ footer .container-footer .elementos-footer{
     justify-content: space-between;
 }
 
-.card:hover, .gift:hover, .security:hover{
+.card i:hover, .gift i:hover, .security i:hover{
     color: #EAC926; 
 }
 }
