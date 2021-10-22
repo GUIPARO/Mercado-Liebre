@@ -447,8 +447,9 @@ header nav .list-header-user ul{
 }
 
 header .compra{
-    display: inline-block;
+    display: inline;
     width: 30%;
+    margin-right: 10px;
 }
 
 main section{
